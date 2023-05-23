@@ -1,6 +1,62 @@
 body {
-    background-image: url("../images/bg.jpg");
-    
-    width: 100vw;
-    min-height: 100vh;
+  background-image: url("../images/bg.jpg");
+
+  width: 100vw;
+  min-height: 100vh;
+  border: solid purple 2px;
+}
+main {
+    border: solid 2px blue;
+}
+header {
+    border: solid 2px green;
+}
+nav {
+    border: solid 2px pink;
+}
+.news-container {
+    border: solid 6px orange;
+}
+.skateboarders-container {
+    /* border: solid 6px palegreen; */
+}
+.skateboarders-container img {
+    /* border: solid 4px white; */
+    object-fit: contain;
+}
+.top-image {
+  display: flex;
+  position: relative;
+  width: 1000px;
+  height: 330px;
+  object-fit: cover;
+  border: solid white 8px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.logo-image {
+  position: absolute;
+  z-index: 3;
+  margin-left: 17%;
+}
+.grid-image {
+  width: 1050px;
+  height: 340px;
+  object-fit: fill;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.top-container {
+    display: flex;
+    border: solid red 2px;
+
+}
+h3 {
+    font-size: 12px;
+}
+p {
+    font-size: 10px;
 }
