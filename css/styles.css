@@ -1,0 +1,6 @@
+body {
+    background-image: url("../images/bg.jpg");
+    
+    width: 100vw;
+    min-height: 100vh;
+}
