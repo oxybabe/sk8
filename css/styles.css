@@ -17,12 +17,19 @@ nav {
 .news-container {
     border: solid 6px orange;
 }
-.skateboarders-container {
-    /* border: solid 6px palegreen; */
+
+#sk8er-1 {
+    border: solid white 4px;
+    font: 16px bold white;
 }
-.skateboarders-container img {
-    /* border: solid 4px white; */
-    object-fit: contain;
+#sk8er-2 {
+    border: solid white 4px;
+}
+#sk8er-3 {
+    border: solid white 4px;
+}
+#sk8er-4 {
+    border: solid white 4px;
 }
 .top-image {
   display: flex;
