@@ -5,12 +5,15 @@ body {
   min-height: 100vh;
   /* border: solid purple 2px; */
 }
-main {
-  /* border: solid 2px blue; */
-}
+
 header {
   /* border: solid 2px green; */
   height: 100%;
+}
+#subscribe {
+  font-size: 12px;
+  display: inline-flex;
+  float: right;
 }
 nav {
   width: 100%;
@@ -24,9 +27,6 @@ nav {
   position: relative;
   color: white;
   text-align: center;
-}
-.news-container {
-  /* border: solid 6px orange; */
 }
 
 #sk8er-1 {
@@ -98,8 +98,43 @@ p {
 .social-icon {
   display: flex;
   float: right;
+  box-shadow: lightgrey;
 }
 .skateboards {
   background-color: whitesmoke;
   max-height: 10%;
+}
+#fb {
+  background-color: rgb(69, 83, 141);
+  border-radius: 0;
+}
+#rss {
+  border-radius: 0;
+  background-color: rgb(195, 146, 69);
+}
+#twitter {
+  border-radius: 0;
+  background-color: rgb(113, 140, 194);
+}
+#youtube {
+  border-radius: 0;
+  background-color: rgb(164, 65, 52);
+}
+/* .uk-dotnav-vertical {
+  float: right;
+  background-color: whitesmoke;
+  padding-top: 0;
+} */
+#dots {
+  float: right;
+  color: white;
+}
+.form-container {
+  float: right;
+}
+
+#submit {
+  width: 30em;
+  background-color: rgb(165, 54, 52);
+  font: white;
 }
