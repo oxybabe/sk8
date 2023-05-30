@@ -16,36 +16,80 @@
     <main class="uk-container uk-container-small align-center">
       <header>
         Subscribe
-        <div class="social-media">Social Media Icons</div>
+        <div class="social-media">
+          <a
+            href=""
+            class="social-icon uk-icon-button"
+            id="fb"
+            uk-icon="facebook"
+          ></a>
+          <a
+            href=""
+            class="social-icon uk-icon-button"
+            id="rss"
+            uk-icon="rss"
+          ></a>
+          <a
+            href=""
+            class="social-icon uk-icon-button"
+            id="twitter"
+            uk-icon="twitter"
+          ></a>
+          <a
+            href=""
+            class="social-icon uk-icon-button"
+            id="youtube"
+            uk-icon="youtube"
+          ></a>
+        </div>
       </header>
-      <nav class="uk-navbar-container" uk-navbar>
+      <nav class="uk-navbar" uk-navbar>
         <ul class="uk-navbar-nav">
-          <li class="uk-parent"><a href="">SK8T News</a></li>
-          <li class="uk-parent"><a href="">SKATEBOARDERS</a></li>
-          <li class="uk-parent"><a href="">BOARD DESIGN</a></li>
-          <li class="uk-parent"><a href="">CONTACT US</a></li>
+          <a
+            class="uk-button uk-button-default navbar-button uk-margin-auto uk-button uk-button-small uk-align-center uk-width-1-4 uk-margin-top uk-margin-bottom uk-flex uk-margin-auto-horizontal"
+            href=""
+            >SK8T News</a
+          >
+          <a
+            class="uk-button uk-button-default navbar-button uk-margin-auto uk-button uk-button-small uk-align-center uk-width-1-4 uk-margin-top uk-margin-bottom uk-flex uk-margin-auto-horizontal"
+            href=""
+            >SKATEBOARDERS</a
+          >
+          <a
+            class="uk-button uk-button-default navbar-button uk-margin-auto uk-button uk-button-small uk-align-center uk-width-1-4 uk-margin-top uk-margin-bottom uk-flex uk-margin-auto-horizontal"
+            href=""
+            >BOARD DESIGN</a
+          >
+          <a
+            class="uk-button uk-button-default navbar-button uk-margin-auto uk-button uk-button-small uk-align-center uk-width-1-4 uk-margin-top uk-margin-bottom uk-flex uk-margin-auto-horizontal"
+            href=""
+            >CONTACT US</a
+          >
         </ul>
       </nav>
 
       <div class="top-container">
-        <img
-          class="top-image uk-position-bottom uk-inline uk-position-relative"
-          src="images/top-image.png"
-          alt="topimage"
-        />
-        <img
-          class="grid-image uk-inline uk-overlay uk-position-absolute uk-position-center"
-          src="images/grid.png"
-          alt="grid"
-          uk-overlay
-          uk-inline
-        />
-        <img
-          class="logo-image uk-inline uk-position-absolute"
-          src="images/peralta-logo.png"
-          alt="skull-logo"
-          uk-inline
-        />
+        <!-- make the image below a div and place grid inside the div -->
+        <div
+          class="top-image uk-position-bottom uk-inline uk-background-cover uk-position-relative"
+          data-src="images/top-image.png"
+          uk-img
+        >
+          <img
+            class="grid-image uk-inline uk-position-absolute"
+            src="images/grid.png"
+            alt="grid"
+            uk-overlay
+            uk-inline
+          />
+          <img
+            class="logo-image uk-inline uk-position-absolute"
+            src="images/peralta-logo.png"
+            alt="skull-logo"
+            uk-inline
+          />
+        </div>
+
         <ul class="uk-dotnav uk-position-bottom-center uk-position-small">
           <li class="uk-active"><a href="#">Item 1</a></li>
           <li><a href="#">Item 2</a></li>
@@ -134,10 +178,10 @@
         </div>
       </div>
 
-      <div class="skateboard-container uk-flex uk-flex-row uk-width-10-10">
+      <div class="skateboards uk-flex uk-flex-row uk-width-10">
         <div
           id="skateboard1"
-          class="uk-flex uk-width-1-10 uk-flex-auto uk-flex-first "
+          class="skateboard uk-flex uk-background-contain uk-width-1-10 uk-flex-auto uk-cover-container uk-flex-first"
           data-src="images/sk8-3.png"
           uk-img
         >
@@ -145,7 +189,7 @@
         </div>
         <div
           id="skateboard2"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-background-contain uk-flex uk-flex-auto uk-width-1-10"
           data-src="images/sk8-4.png"
           uk-img
         >
@@ -153,7 +197,7 @@
         </div>
         <div
           id="skateboard3"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-background-contain uk-flex uk-width-1-10"
           data-src="images/sk8-5.png"
           uk-img
         >
@@ -161,7 +205,7 @@
         </div>
         <div
           id="skateboard4"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-background-contain uk-flex uk-width-1-10"
           data-src="images/sk8-6.png"
           uk-img
         >
@@ -169,7 +213,7 @@
         </div>
         <div
           id="skateboard5"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-7.png"
           uk-img
         >
@@ -177,7 +221,7 @@
         </div>
         <div
           id="skateboard6"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-8.png"
           uk-img
         >
@@ -185,7 +229,7 @@
         </div>
         <div
           id="skateboard7"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-9.png"
           uk-img
         >
@@ -193,7 +237,7 @@
         </div>
         <div
           id="skateboard8"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-10.png"
           uk-img
         >
@@ -201,7 +245,7 @@
         </div>
         <div
           id="skateboard9"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-2.png"
           uk-img
         >
@@ -209,7 +253,7 @@
         </div>
         <div
           id="skateboard10"
-          class="uk-flex uk-width-1-10"
+          class="skateboard uk-flex uk-background-contain uk-width-1-10"
           data-src="images/sk8-1.png"
           uk-img
         >
