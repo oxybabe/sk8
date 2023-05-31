@@ -137,14 +137,16 @@ p {
   color: white;
   margin-top: 1%;
 }
-.form-container {
+.contact-form {
   float: right;
+  justify-content: space-evenly;
 }
 
 #submit {
-  width: 30em;
+  width: 15em;
   background-color: rgb(165, 54, 52);
   font: white;
+  float: right;
 }
 .social-icon-form {
   border-radius: 0;

@@ -96,11 +96,13 @@
           />
         </div>
 
-        <ul class="uk-dotnav uk-position-bottom-center uk-position-small">
-          <li class="uk-active"><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-        </ul>
+        <div class="uk-position-bottom-center uk-position-small">
+          <ul class="uk-dotnav">
+            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+            <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+          </ul>
+        </div>
       </div>
 
       <div
@@ -268,9 +270,9 @@
       </div>
 
       <div
-        class="contact-container uk-card uk-card-body uk-card-default uk-margin-top uk-margin-bottom"
+        class="contact-container uk-card-body uk-card-default uk-margin-top uk-margin-bottom uk-width-2-2"
       >
-        <aside class="contact-text uk-flex uk-width-1-2 uk-height 1-3">
+        <aside class="contact-text uk-width-1-2">
           <h1>Contact Us for More Information</h1>
           <p>
             Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing
@@ -305,8 +307,8 @@
             <a href="" id="dots" uk-icon="icon: more-vertical"></a>
           </div>
         </aside>
-        <aside class="contact-form-box uk-width-2-2">
-          <div class="">
+        <aside class="contact-form uk-width-1-2">
+          <div class="name">
             <input
               class="uk-input"
               type="text"
@@ -314,7 +316,7 @@
               aria-label="Name"
             />
           </div>
-          <div class="">
+          <div class="email">
             <input
               class="uk-input"
               type="text"
@@ -322,19 +324,15 @@
               aria-label="email"
             />
           </div>
-          <div class="">
-            <input
-              class="uk-input"
-              type="text"
+          <div class="message">
+            <textarea
+              class="uk-textarea"
+              rows="5"
               placeholder="Your Message"
-              id="Message"
-              aria-label="message"
-            />
+              aria-label="Textarea"
+            ></textarea>
           </div>
-          <button
-            id="submit"
-            class="uk-button uk-button-default uk-width-1-2 uk-margin-small-bottom"
-          >
+          <button id="submit" class="uk-button uk-margin-small-bottom">
             Submit
           </button>
         </aside>
